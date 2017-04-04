@@ -15,7 +15,7 @@ function task1(){
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
 
-    d3.tsv("http://127.0.0.1:8080/task1.tsv", type, function(error, data) {
+    d3.tsv("http://136.145.216.147:8080/task1.tsv", type, function(error, data) {
     //for(var i=0;i<data.length;i++){total+=data[i].value;}
     //for(var i=0;i<data.length;i++){data[i].value/=total;}
     
