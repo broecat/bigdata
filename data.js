@@ -15,7 +15,7 @@ function task1(){
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
 
-    d3.tsv("http://localhost:8080/task3.tsv", type, function(error, data) {
+    d3.tsv("http://127.0.0.1:8080/task1.tsv", type, function(error, data) {
     //for(var i=0;i<data.length;i++){total+=data[i].value;}
     //for(var i=0;i<data.length;i++){data[i].value/=total;}
     
@@ -63,7 +63,7 @@ var border = 10;
 //console.log("Working...");
 var container = d3.select("body"); 
 //var color = d3.scaleCategory20();
-d3.tsv("http://192.168.2.10:8080/task3.tsv", type, function(error, data) {
+d3.tsv("http://127.0.0.1:8080/task3.tsv", type, function(error, data) {
 
     // ****************  Individual colours  *********************
     data.forEach(function(d) { 
