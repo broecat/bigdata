@@ -63,7 +63,7 @@ var border = 10;
 //console.log("Working...");
 var container = d3.select("body"); 
 //var color = d3.scaleCategory20();
-d3.tsv("http://127.0.0.1:8080/task3.tsv", type, function(error, data) {
+d3.tsv("http://136.145.216.147:8080/task3.tsv", type, function(error, data) {
 
     // ****************  Individual colours  *********************
     data.forEach(function(d) { 
@@ -130,7 +130,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("http://localhost:8080/task4.json", function(error, flare) {
+d3.json("http://136.145.216.147:8080/task4.json", function(error, flare) {
   if (error) throw error;
 
   flare.x0 = 0;
